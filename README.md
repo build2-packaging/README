@@ -4,7 +4,7 @@ The aim of this organization is to serve as a convenient collaboration place
 for packaging third-party projects for `build2`.
 
 By publishing your efforts under this organization (as opposed to, say, your
-personal projects) you make it easier for others to join or, if you are no
+personal workspace) you make it easier for others to join or, if you are no
 longer interested, to take over the package development/maintenance.
 
 In addition to this organization we also have the
