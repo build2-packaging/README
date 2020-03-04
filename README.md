@@ -13,6 +13,31 @@ In addition to this organization we also have the
 on [`cpplang.slack.com`](https://cpplang.slack.com/). To join, simply get
 in touch using either medium.
 
+## Packaging Guidelines
+
+This section describes how to package a third-party project for `build2` while
+the next section describes the ongoing versioning and release management once
+this is done.
+
+> Note: this section is a work in progress. See also projects that have
+> already been packaged for examples with some of them containing the
+> `README-DEV` files with additional details on the packaging process.
+
+If the third-party project is available from a `git` repository, then the
+recommended approach is to use the `git` submodule mechanism to make the
+third-party source code available inside the package repository, customarily
+in a directory called `upstream/`. We can then use symlinks to non-invasively
+overlay the project's source code with buildfiles and, potentially, reorganize
+its structure to better align with the supported source/output arrangements.
+See [Using Symlinks in build2 Projects](https://build2.org/article/symlinks.xhtml)
+for details.
+
+For more complex cases, when deciding on how to split the project into
+multiple packages (and what to call them) or which optional features to enable
+by default, it is recommended to use Debian and Fedora packages as a
+reference.
+
+
 ## Version and Release Management
 
 This section describes the recommended version and release management for an
