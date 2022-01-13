@@ -19,9 +19,11 @@ This section describes how to package a third-party project for `build2` while
 the next section describes the ongoing versioning and release management once
 this is done.
 
-> Note: this section is a work in progress. See also projects that have
-> already been packaged for examples with some of them containing the
-> `README-DEV` files with additional details on the packaging process.
+> Note: this section is a work in progress. See also [`build2`
+> HOWTO](https://github.com/build2/HOWTO) for practical instructions and
+> advice on how to achieve various things with `build2` as well as projects
+> that have already been packaged for examples (some of them containing the
+> `README-DEV` files with additional details on the packaging process).
 
 If the third-party project is available from a `git` repository, then the
 recommended approach is to use the `git` submodule mechanism to make the
